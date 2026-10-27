@@ -147,20 +147,6 @@
     render();
   });
 
-  /* ---------- Video facades ---------- */
-  document.querySelectorAll('.video').forEach(function (box) {
-    var start = box.querySelector('.video__start');
-    start.addEventListener('click', function () {
-      players.forEach(function (p) { p.pause(); });
-      var f = document.createElement('iframe');
-      f.src = 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(box.dataset.yt) + '?autoplay=1&rel=0';
-      f.title = box.dataset.title || 'Video';
-      f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
-      f.setAttribute('allowfullscreen', '');
-      box.replaceChildren(f);
-    });
-  });
-
   /* ---------- Lightbox ---------- */
   var dlg = document.querySelector('.lightbox');
   if (dlg && typeof dlg.showModal === 'function') {

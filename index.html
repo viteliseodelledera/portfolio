@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Viteliseo Dell’Edera (Elis) | Compositore, arrangiatore e produttore musicale</title>
 <meta name="description" content="Portfolio di Viteliseo Dell’Edera, in arte Elis: composizione per immagini, jingle, inni, arrangiamento e produzione musicale. Pianista e cantautore, oltre 15 anni di popular music.">
-<meta name="theme-color" content="#0B1120">
+<meta name="theme-color" content="#FBF7EE">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="canonical" href="https://viteliseodelledera.github.io/portfolio/">
 
@@ -17,7 +17,8 @@
 <meta property="og:image" content="https://viteliseodelledera.github.io/portfolio/og.jpg">
 <meta name="twitter:card" content="summary_large_image">
 
-<link rel="preload" href="fraunces-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="bricolage-grotesque-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="caveat-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="hanken-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="style.css">
 
@@ -55,8 +56,8 @@
     <span></span><span></span>
   </button>
   <nav class="nav" id="nav" aria-label="Navigazione principale">
-    <a href="#servizi">Cosa faccio</a>
     <a href="#progetti">Progetti</a>
+    <a href="#competenze">Competenze</a>
     <a href="#palco">Sul palco</a>
     <a href="#percorso">Percorso</a>
     <a class="nav__cta" href="#contatti">Contatti</a>
@@ -67,82 +68,41 @@
 
   <!-- HERO -->
   <section class="hero" aria-labelledby="titolo">
-    <img class="hero__img" src="hero-live.jpg" alt="Elis al piano e alla voce durante un concerto, in una luce blu" width="1600" height="1064" fetchpriority="high">
-    <div class="wrap hero__inner">
-      <p class="eyebrow hero__kicker">Elis &nbsp;·&nbsp; Compositore, arrangiatore, produttore</p>
-      <h1 id="titolo" class="hero__title">Viteliseo<br>Dell’Edera</h1>
-      <p class="hero__lead">Scrivo, arrangio e produco musica per marchi, immagini e palchi. Pianista e cantautore, con oltre quindici anni di popular music alle spalle: dalla prima idea fino al master finale.</p>
-      <div class="hero__actions">
-        <a class="btn btn--primary" href="#progetti">Guarda i progetti</a>
-        <a class="btn btn--ghost" href="#contatti">Contatti</a>
+    <div class="wrap hero__grid">
+      <div class="hero__text">
+        <p class="hero__kicker">Elis · compositore, arrangiatore, produttore</p>
+        <h1 id="titolo" class="hero__title">Viteliseo <span class="mark">Dell’Edera</span></h1>
+        <p class="hero__lead">Scrivo, arrangio e produco musica per marchi, immagini e palchi. Pianista e cantautore, con oltre quindici anni di popular music alle spalle: dalla prima idea fino al master finale.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#progetti">Guarda i progetti</a>
+          <a class="btn btn--ghost" href="#contatti">Contatti</a>
+        </div>
       </div>
+      <figure class="hero__art">
+        <img src="elis-bozzetto.jpg" alt="Bozzetto illustrato di Elis: occhiali scuri, baffi e firma «Elis», su sfondo colorato a quadretti" width="512" height="580" fetchpriority="high">
+      </figure>
     </div>
-    <p class="hero__credit">Foto: Omar Cantoro</p>
   </section>
 
   <!-- NUMERI -->
   <section class="stats" aria-label="In numeri">
     <div class="wrap stats__grid">
-      <div class="stat" data-reveal>
+      <div class="stat" style="--c:var(--orange)" data-reveal>
         <p class="stat__n">15<span>+</span></p>
         <p class="stat__l">anni di popular music</p>
       </div>
-      <div class="stat" data-reveal>
+      <div class="stat" style="--c:var(--red)" data-reveal>
         <p class="stat__n">900<span>+</span></p>
         <p class="stat__l">eventi dal vivo in quasi tutte le regioni italiane</p>
       </div>
-      <div class="stat" data-reveal>
+      <div class="stat" style="--c:var(--blue)" data-reveal>
         <p class="stat__n">150<span>+</span></p>
         <p class="stat__l">festival e concerti con l’orchestra Skanderground</p>
       </div>
-      <div class="stat" data-reveal>
+      <div class="stat" style="--c:var(--green)" data-reveal>
         <p class="stat__n">110<span>L</span></p>
         <p class="stat__l">Diploma accademico di II livello in Popular Music</p>
       </div>
-    </div>
-  </section>
-
-  <!-- SERVIZI -->
-  <section class="section section--tint" id="servizi" aria-labelledby="h-servizi">
-    <div class="wrap">
-      <header class="section__head" data-reveal>
-        <p class="eyebrow">Cosa faccio</p>
-        <h2 id="h-servizi">Dalla scrittura alla consegna, <em>in un’unica mano.</em></h2>
-        <p class="section__intro">Un progetto musicale richiede più competenze insieme: scrivere, arrangiare, registrare, rifinire, coordinare le persone giuste. Le ho tutte, e so passare da una all’altra senza perdere il filo.</p>
-      </header>
-
-      <ol class="services">
-        <li class="service" data-reveal>
-          <span class="service__n">01</span>
-          <h3>Composizione per immagini</h3>
-          <p>Colonne sonore scritte su video già montato: la sensibilità delle immagini diventa partitura, a tempo con il racconto visivo.</p>
-        </li>
-        <li class="service" data-reveal>
-          <span class="service__n">02</span>
-          <h3>Jingle e identità sonora</h3>
-          <p>Musica e testo per spot, radio in store e comunicazione di marca, pensati per essere riconoscibili e per funzionare nel loro contesto.</p>
-        </li>
-        <li class="service" data-reveal>
-          <span class="service__n">03</span>
-          <h3>Arrangiamento e orchestrazione</h3>
-          <p>Dalla scrittura a quattro voci alla band pop-rock. Trasposizioni e adattamenti di stile secondo le richieste del cliente.</p>
-        </li>
-        <li class="service" data-reveal>
-          <span class="service__n">04</span>
-          <h3>Produzione e post-produzione</h3>
-          <p>Registrazione, editing, mixing e mastering in Logic Pro e Pro Tools, con campionatori e sintesi del suono.</p>
-        </li>
-        <li class="service" data-reveal>
-          <span class="service__n">05</span>
-          <h3>Direzione artistica</h3>
-          <p>Scelta di musicisti e tecnologie, organizzazione degli spazi, rapporto con enti e partner. Esperienza come direttore artistico, di coro e di ensemble.</p>
-        </li>
-        <li class="service" data-reveal>
-          <span class="service__n">06</span>
-          <h3>Tutela e diritto d’autore</h3>
-          <p>Brani originali depositati in SIAE e conoscenza delle pratiche di tutela dell’opera, dal deposito alla distribuzione.</p>
-        </li>
-      </ol>
     </div>
   </section>
 
@@ -152,131 +112,172 @@
       <header class="section__head" data-reveal>
         <p class="eyebrow">Progetti</p>
         <h2 id="h-progetti">Lavori scelti, <em>con il mio ruolo.</em></h2>
-        <p class="section__intro">Una selezione di commissioni e produzioni, dalla più recente alla più lontana. Per ognuna indico che cosa ho fatto, e dove possibile puoi ascoltare o guardare il risultato.</p>
+        <p class="section__intro">Una selezione di commissioni e produzioni, dalla più recente alla più lontana. Per ognuna indico che cosa ho fatto e, dove possibile, puoi ascoltare o guardare il risultato.</p>
       </header>
 
-      <!-- 2025 -->
-      <article class="case" data-reveal>
-        <div class="case__meta">
-          <p class="case__year">2025</p>
-          <p class="case__date">Agosto</p>
-          <p class="case__cat">Live e show</p>
-        </div>
-        <div class="case__body">
-          <h3>Intro del tour «In stato di brezza»</h3>
-          <p class="case__client">Skanderground</p>
-          <p>Traccia di apertura del tour estivo: accompagna la salita della band sul palco e fa da preludio al primo brano del concerto.</p>
-          <ul class="roles" aria-label="Ruoli">
-            <li>Composizione</li><li>Arrangiamento</li><li>Registrazione</li><li>Mixing</li><li>Mastering</li>
-          </ul>
-          <div class="player" data-src="intro-in-stato-di-brezza.mp3" data-peaks="intro-in-stato-di-brezza" data-duration="193" data-title="Intro del tour In stato di brezza">
-            <button class="player__btn" type="button" aria-label="Riproduci: Intro del tour In stato di brezza"></button>
-            <div class="player__wave" role="slider" tabindex="0" aria-label="Posizione di ascolto" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
-            <span class="player__time" aria-live="off">0:00 / 3:13</span>
+      <div class="cases">
+        <!-- 2025 -->
+        <article class="case" style="--c:var(--orange);--cd:var(--orange-d)" data-reveal>
+          <div class="case__meta">
+            <p class="case__year">2025</p>
+            <p class="case__date">Agosto</p>
+            <p class="case__cat">Live e show</p>
           </div>
-        </div>
-      </article>
+          <div class="case__body">
+            <h3>Intro del tour «In stato di brezza»</h3>
+            <p class="case__client">Skanderground</p>
+            <p>Traccia di apertura del tour estivo: accompagna la salita della band sul palco e fa da preludio al primo brano del concerto.</p>
+            <ul class="roles" aria-label="Ruoli">
+              <li>Composizione</li><li>Arrangiamento</li><li>Registrazione</li><li>Mixing</li><li>Mastering</li>
+            </ul>
+            <div class="player" data-src="intro-in-stato-di-brezza.mp3" data-peaks="intro-in-stato-di-brezza" data-duration="193" data-title="Intro del tour In stato di brezza">
+              <button class="player__btn" type="button" aria-label="Riproduci: Intro del tour In stato di brezza"></button>
+              <div class="player__wave" role="slider" tabindex="0" aria-label="Posizione di ascolto" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+              <span class="player__time" aria-live="off">0:00 / 3:13</span>
+            </div>
+          </div>
+        </article>
 
-      <!-- 2024 -->
-      <article class="case" data-reveal>
-        <div class="case__meta">
-          <p class="case__year">2024</p>
-          <p class="case__date">15 agosto</p>
-          <p class="case__cat">Sport e comunità</p>
-        </div>
-        <div class="case__body">
-          <h3>Inno della Polimnia Calcio</h3>
-          <p class="case__client">Squadra militante in Eccellenza</p>
-          <p>Inno ufficiale della squadra, curato in ogni fase: dalla composizione alla finalizzazione tecnica del brano, pronto per essere cantato e diffuso.</p>
-          <ul class="roles" aria-label="Ruoli">
-            <li>Composizione</li><li>Arrangiamento</li><li>Registrazione</li><li>Post-produzione</li><li>Mixing</li><li>Mastering</li>
-          </ul>
-          <div class="video" data-yt="SAL-a2QcF_I" data-title="Inno della Polimnia Calcio">
-            <button class="video__start" type="button" aria-label="Guarda il video: Inno della Polimnia Calcio">
-              <span class="video__play" aria-hidden="true"></span>
-              <span class="video__label">Guarda il video</span>
-              <span class="video__note">Si carica da YouTube quando lo avvii</span>
-            </button>
+        <!-- 2024 -->
+        <article class="case" style="--c:var(--red);--cd:var(--red-d)" data-reveal>
+          <div class="case__meta">
+            <p class="case__year">2024</p>
+            <p class="case__date">15 agosto</p>
+            <p class="case__cat">Sport e comunità</p>
           </div>
-          <a class="textlink" href="https://youtu.be/SAL-a2QcF_I" target="_blank" rel="noopener">Apri su YouTube<span class="sr-only"> (si apre in una nuova scheda)</span></a>
-        </div>
-      </article>
+          <div class="case__body">
+            <h3>Inno della Polimnia Calcio</h3>
+            <p class="case__client">Squadra militante in Eccellenza</p>
+            <p>Inno ufficiale della squadra, curato in ogni fase: dalla composizione alla finalizzazione tecnica del brano, pronto per essere cantato e diffuso.</p>
+            <ul class="roles" aria-label="Ruoli">
+              <li>Composizione</li><li>Arrangiamento</li><li>Registrazione</li><li>Post-produzione</li><li>Mixing</li><li>Mastering</li>
+            </ul>
+            <div class="embed">
+              <iframe src="https://www.youtube-nocookie.com/embed/SAL-a2QcF_I?rel=0" title="Inno della Polimnia Calcio" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
+            </div>
+            <a class="textlink" href="https://youtu.be/SAL-a2QcF_I" target="_blank" rel="noopener">Se il video non parte, aprilo su YouTube<span class="sr-only"> (si apre in una nuova scheda)</span></a>
+          </div>
+        </article>
 
-      <!-- 2020 -->
-      <article class="case" data-reveal>
-        <div class="case__meta">
-          <p class="case__year">2020</p>
-          <p class="case__date">22 maggio</p>
-          <p class="case__cat">Brand e video</p>
-        </div>
-        <div class="case__body">
-          <h3>«Rosa panino, buon compleanno Pescaria»</h3>
-          <p class="case__client">Pescaria</p>
-          <p>Colonna sonora del video di presentazione di un evento online, nel periodo Covid, per il compleanno di Pescaria, realtà molto nota in Italia per i panini di pesce. Arriva dopo i jingle originali scritti per il gruppo nel 2019. Il lavoro è stato ripreso anche dalla testata <em>La Repubblica</em>.</p>
-          <ul class="roles" aria-label="Ruoli">
-            <li>Colonna sonora</li><li>Composizione</li>
-          </ul>
-          <div class="linkrow">
-            <a class="linkcard" href="https://www.facebook.com/share/v/19NKYqyjQW/?mibextid=wwXIfr" target="_blank" rel="noopener">
-              <span class="linkcard__k">Video</span>
-              <span class="linkcard__t">Guarda il video su Facebook</span>
-              <span class="sr-only">(si apre in una nuova scheda)</span>
-            </a>
-            <a class="linkcard" href="https://bari.repubblica.it/dossier/con-gusto/2020/05/22/news/pescaria_polignano_cinque_anni-257346579/" target="_blank" rel="noopener">
-              <span class="linkcard__k">Stampa</span>
-              <span class="linkcard__t">Leggi l’articolo su La Repubblica Bari</span>
-              <span class="sr-only">(si apre in una nuova scheda)</span>
-            </a>
+        <!-- 2020 -->
+        <article class="case" style="--c:var(--pink);--cd:var(--pink-d)" data-reveal>
+          <div class="case__meta">
+            <p class="case__year">2020</p>
+            <p class="case__date">22 maggio</p>
+            <p class="case__cat">Brand e video</p>
           </div>
-        </div>
-      </article>
+          <div class="case__body">
+            <h3>«Rosa panino, buon compleanno Pescaria»</h3>
+            <p class="case__client">Pescaria</p>
+            <p>Colonna sonora del video di presentazione di un evento online, nel periodo Covid, per il compleanno di Pescaria, realtà molto nota in Italia per i panini di pesce. Arriva dopo i jingle originali scritti per il gruppo nel 2019. Il lavoro è stato ripreso anche dalla testata <em>La Repubblica</em>.</p>
+            <ul class="roles" aria-label="Ruoli">
+              <li>Colonna sonora</li><li>Composizione</li>
+            </ul>
+            <div class="embed">
+              <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fv%2F19NKYqyjQW%2F&amp;show_text=false&amp;t=0" title="Video Pescaria, buon compleanno" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="linkrow">
+              <a class="linkcard" href="https://www.facebook.com/share/v/19NKYqyjQW/?mibextid=wwXIfr" target="_blank" rel="noopener">
+                <span class="linkcard__k">Video</span>
+                <span class="linkcard__t">Aprilo su Facebook</span>
+                <span class="sr-only">(si apre in una nuova scheda)</span>
+              </a>
+              <a class="linkcard" href="https://bari.repubblica.it/dossier/con-gusto/2020/05/22/news/pescaria_polignano_cinque_anni-257346579/" target="_blank" rel="noopener">
+                <span class="linkcard__k">Stampa</span>
+                <span class="linkcard__t">Leggi l’articolo su La Repubblica Bari</span>
+                <span class="sr-only">(si apre in una nuova scheda)</span>
+              </a>
+            </div>
+          </div>
+        </article>
 
-      <!-- 2019 -->
-      <article class="case" data-reveal>
-        <div class="case__meta">
-          <p class="case__year">2019</p>
-          <p class="case__date">11 settembre</p>
-          <p class="case__cat">Brand e pubblicità</p>
-        </div>
-        <div class="case__body">
-          <h3>Jingle «Maiora»</h3>
-          <p class="case__client">Despar</p>
-          <p>Jingle pubblicitario per Despar, pensato per la diffusione nei punti vendita attraverso Radio Despar. Musica, testo e arrangiamento sono miei, insieme a registrazione e post-produzione.</p>
-          <ul class="roles" aria-label="Ruoli">
-            <li>Composizione musicale</li><li>Testo</li><li>Arrangiamento</li><li>Registrazione</li><li>Post-produzione</li>
-          </ul>
-          <div class="player" data-src="despar-maiora.mp3" data-peaks="despar-maiora" data-duration="32" data-title="Jingle Despar Maiora">
-            <button class="player__btn" type="button" aria-label="Riproduci: Jingle Despar Maiora"></button>
-            <div class="player__wave" role="slider" tabindex="0" aria-label="Posizione di ascolto" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
-            <span class="player__time" aria-live="off">0:00 / 0:32</span>
+        <!-- 2019 -->
+        <article class="case" style="--c:var(--blue);--cd:var(--blue-d)" data-reveal>
+          <div class="case__meta">
+            <p class="case__year">2019</p>
+            <p class="case__date">11 settembre</p>
+            <p class="case__cat">Brand e pubblicità</p>
           </div>
-        </div>
-      </article>
+          <div class="case__body">
+            <h3>Jingle «Maiora»</h3>
+            <p class="case__client">Despar</p>
+            <p>Jingle pubblicitario per Despar, pensato per la diffusione nei punti vendita attraverso Radio Despar. Musica, testo e arrangiamento sono miei, insieme a registrazione e post-produzione.</p>
+            <ul class="roles" aria-label="Ruoli">
+              <li>Composizione musicale</li><li>Testo</li><li>Arrangiamento</li><li>Registrazione</li><li>Post-produzione</li>
+            </ul>
+            <div class="player" data-src="despar-maiora.mp3" data-peaks="despar-maiora" data-duration="32" data-title="Jingle Despar Maiora">
+              <button class="player__btn" type="button" aria-label="Riproduci: Jingle Despar Maiora"></button>
+              <div class="player__wave" role="slider" tabindex="0" aria-label="Posizione di ascolto" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+              <span class="player__time" aria-live="off">0:00 / 0:32</span>
+            </div>
+          </div>
+        </article>
 
-      <!-- 2017 -->
-      <article class="case" data-reveal>
-        <div class="case__meta">
-          <p class="case__year">2017</p>
-          <p class="case__date">27 dicembre</p>
-          <p class="case__cat">Immagine e video</p>
-        </div>
-        <div class="case__body">
-          <h3>Colonna sonora per il video promozionale di una sala ricevimenti</h3>
-          <p class="case__client">Commissione privata</p>
-          <p>Musiche composte direttamente sul video già montato: il lavoro consiste nel trasformare la sensibilità delle immagini in composizione. I crediti sono visibili a fine video.</p>
-          <ul class="roles" aria-label="Ruoli">
-            <li>Colonna sonora</li><li>Composizione su video</li>
-          </ul>
-          <div class="video" data-yt="k9tV3AAu82M" data-title="Colonna sonora per il video promozionale di una sala ricevimenti">
-            <button class="video__start" type="button" aria-label="Guarda il video: colonna sonora per il video promozionale di una sala ricevimenti">
-              <span class="video__play" aria-hidden="true"></span>
-              <span class="video__label">Guarda il video</span>
-              <span class="video__note">Si carica da YouTube quando lo avvii</span>
-            </button>
+        <!-- 2017 -->
+        <article class="case" style="--c:var(--green);--cd:var(--green-d)" data-reveal>
+          <div class="case__meta">
+            <p class="case__year">2017</p>
+            <p class="case__date">27 dicembre</p>
+            <p class="case__cat">Immagine e video</p>
           </div>
-          <a class="textlink" href="https://youtu.be/k9tV3AAu82M" target="_blank" rel="noopener">Apri su YouTube<span class="sr-only"> (si apre in una nuova scheda)</span></a>
-        </div>
-      </article>
+          <div class="case__body">
+            <h3>Colonna sonora per il video promozionale di una sala ricevimenti</h3>
+            <p class="case__client">Commissione privata</p>
+            <p>Musiche composte direttamente sul video già montato: il lavoro consiste nel trasformare la sensibilità delle immagini in composizione. I crediti sono visibili a fine video.</p>
+            <ul class="roles" aria-label="Ruoli">
+              <li>Colonna sonora</li><li>Composizione su video</li>
+            </ul>
+            <div class="embed">
+              <iframe src="https://www.youtube-nocookie.com/embed/k9tV3AAu82M?rel=0" title="Colonna sonora per il video promozionale di una sala ricevimenti" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
+            </div>
+            <a class="textlink" href="https://youtu.be/k9tV3AAu82M" target="_blank" rel="noopener">Se il video non parte, aprilo su YouTube<span class="sr-only"> (si apre in una nuova scheda)</span></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPETENZE -->
+  <section class="section section--tint" id="competenze" aria-labelledby="h-competenze">
+    <div class="wrap">
+      <header class="section__head" data-reveal>
+        <p class="eyebrow">Competenze</p>
+        <h2 id="h-competenze">Dalla scrittura alla consegna, <em>in un’unica mano.</em></h2>
+        <p class="section__intro">Un progetto musicale richiede più competenze insieme: scrivere, arrangiare, registrare, rifinire, coordinare le persone giuste. Le ho tutte, e so passare da una all’altra senza perdere il filo.</p>
+      </header>
+
+      <ol class="services">
+        <li class="service" style="--c:var(--orange)" data-reveal>
+          <span class="service__n">1</span>
+          <h3>Composizione per immagini</h3>
+          <p>Colonne sonore scritte su video già montato: la sensibilità delle immagini diventa partitura, a tempo con il racconto visivo.</p>
+        </li>
+        <li class="service" style="--c:var(--pink)" data-reveal>
+          <span class="service__n">2</span>
+          <h3>Jingle e identità sonora</h3>
+          <p>Musica e testo per spot, radio in store e comunicazione di marca, pensati per essere riconoscibili e per funzionare nel loro contesto.</p>
+        </li>
+        <li class="service" style="--c:var(--blue)" data-reveal>
+          <span class="service__n">3</span>
+          <h3>Arrangiamento e orchestrazione</h3>
+          <p>Dalla scrittura a quattro voci alla band pop-rock. Trasposizioni e adattamenti di stile secondo le richieste del cliente.</p>
+        </li>
+        <li class="service" style="--c:var(--green)" data-reveal>
+          <span class="service__n">4</span>
+          <h3>Produzione e post-produzione</h3>
+          <p>Registrazione, editing, mixing e mastering in Logic Pro e Pro Tools, con campionatori e sintesi del suono.</p>
+        </li>
+        <li class="service" style="--c:var(--red)" data-reveal>
+          <span class="service__n">5</span>
+          <h3>Direzione artistica</h3>
+          <p>Scelta di musicisti e tecnologie, organizzazione degli spazi, rapporto con enti e partner. Esperienza come direttore artistico, di coro e di ensemble.</p>
+        </li>
+        <li class="service" style="--c:var(--orange)" data-reveal>
+          <span class="service__n">6</span>
+          <h3>Tutela e diritto d’autore</h3>
+          <p>Brani originali depositati in SIAE e conoscenza delle pratiche di tutela dell’opera, dal deposito alla distribuzione.</p>
+        </li>
+      </ol>
     </div>
   </section>
 
@@ -301,16 +302,16 @@
 
       <div class="gallery" role="list">
         <figure class="shot" role="listitem" data-reveal>
+          <button type="button" class="shot__btn" data-full="hero-live.jpg" data-cap="Dal vivo. Foto: Omar Cantoro">
+            <img src="hero-live.jpg" alt="Elis al piano e alla voce durante un concerto, in una luce blu" width="1600" height="1064" loading="lazy">
+          </button>
+          <figcaption>Dal vivo · foto Omar Cantoro</figcaption>
+        </figure>
+        <figure class="shot" role="listitem" data-reveal>
           <button type="button" class="shot__btn" data-full="studio-profile.jpg" data-cap="In studio">
             <img src="studio-profile.jpg" alt="Elis in studio, concentrato alla tastiera" width="825" height="1100" loading="lazy">
           </button>
           <figcaption>In studio</figcaption>
-        </figure>
-        <figure class="shot" role="listitem" data-reveal>
-          <button type="button" class="shot__btn" data-full="palco-roma.jpg" data-cap="Dal vivo">
-            <img src="palco-roma.jpg" alt="Elis canta dal vivo su un palco all’aperto, ripreso da una telecamera" width="1400" height="933" loading="lazy">
-          </button>
-          <figcaption>Dal vivo</figcaption>
         </figure>
         <figure class="shot" role="listitem" data-reveal>
           <button type="button" class="shot__btn" data-full="bw-piano.jpg" data-cap="Piano e voce">
@@ -319,16 +320,22 @@
           <figcaption>Piano e voce</figcaption>
         </figure>
         <figure class="shot" role="listitem" data-reveal>
-          <button type="button" class="shot__btn" data-full="palco-conduzione.jpg" data-cap="Sul palco">
-            <img src="palco-conduzione.jpg" alt="Elis con il microfono in mano su un grande palco, insieme ad altri tre presentatori" width="1400" height="933" loading="lazy">
+          <button type="button" class="shot__btn" data-full="palco-roma.jpg" data-cap="Dal vivo">
+            <img src="palco-roma.jpg" alt="Elis canta dal vivo su un palco all’aperto, ripreso da una telecamera" width="1400" height="933" loading="lazy">
           </button>
-          <figcaption>Sul palco</figcaption>
+          <figcaption>Dal vivo</figcaption>
         </figure>
         <figure class="shot" role="listitem" data-reveal>
           <button type="button" class="shot__btn" data-full="keys-duo.jpg" data-cap="La postazione tastiere">
             <img src="keys-duo.jpg" alt="Due tastiere rosse su doppio stand in uno studio con pannelli acustici" width="825" height="1100" loading="lazy">
           </button>
           <figcaption>La postazione tastiere</figcaption>
+        </figure>
+        <figure class="shot" role="listitem" data-reveal>
+          <button type="button" class="shot__btn" data-full="palco-conduzione.jpg" data-cap="Sul palco">
+            <img src="palco-conduzione.jpg" alt="Elis con il microfono in mano su un grande palco, insieme ad altri tre presentatori" width="1400" height="933" loading="lazy">
+          </button>
+          <figcaption>Sul palco</figcaption>
         </figure>
         <figure class="shot" role="listitem" data-reveal>
           <button type="button" class="shot__btn" data-full="cet-palco.jpg" data-cap="Formazione al CET, Centro Europeo di Toscolano">
@@ -400,7 +407,6 @@
 
   <!-- CONTATTI -->
   <section class="contact" id="contatti" aria-labelledby="h-contatti">
-    <img class="contact__bg" src="keys-detail.jpg" alt="" width="675" height="900" loading="lazy">
     <div class="wrap contact__inner" data-reveal>
       <p class="eyebrow">Contatti</p>
       <h2 id="h-contatti">Parliamone.</h2>
@@ -419,7 +425,6 @@
 <footer class="site-footer">
   <div class="wrap site-footer__inner">
     <p>© 2026 Viteliseo Dell’Edera. Tutti i diritti riservati.</p>
-    <p>Foto in apertura: Omar Cantoro.</p>
     <a href="#top">Torna su</a>
   </div>
 </footer>

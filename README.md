@@ -1,11 +1,11 @@
 # Viteliseo Dell'Edera (Elis) | Portfolio
 
-Sito statico (HTML, CSS, JavaScript) pubblicato con GitHub Pages.
+Sito statico (HTML, CSS, JavaScript) pubblicato con GitHub Pages. Tutti i file stanno nella stessa cartella.
 
 - `index.html`: contenuti della pagina
 - `style.css`: stile
-- `main.js`: lettore audio, video su richiesta, galleria
+- `main.js`: lettore audio, galleria, menu
 - `peaks.js`: forme d'onda precalcolate dei due audio
-- `assets/audio`, `assets/img`, `assets/fonts`: media e font (Fraunces e Hanken Grotesk, licenza OFL)
+- `*.jpg`, `*.mp3`, `*.woff2`: immagini, audio e font (Bricolage Grotesque, Caveat e Hanken Grotesk, licenza OFL)
 
-Per modificare un testo basta editare `index.html`.
+Per aggiornare il sito basta ricaricare i file modificati con lo stesso nome.
